@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cache", "GenericCache\Cache.csproj", "{B3DFBA4E-10F9-4494-8505-9E6C1BB4A395}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheTests", "CacheTests\CacheTests.csproj", "{3D287648-FA56-472E-ADBC-BB3F474B588C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3DFBA4E-10F9-4494-8505-9E6C1BB4A395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3DFBA4E-10F9-4494-8505-9E6C1BB4A395}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3DFBA4E-10F9-4494-8505-9E6C1BB4A395}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3DFBA4E-10F9-4494-8505-9E6C1BB4A395}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D287648-FA56-472E-ADBC-BB3F474B588C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D287648-FA56-472E-ADBC-BB3F474B588C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D287648-FA56-472E-ADBC-BB3F474B588C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D287648-FA56-472E-ADBC-BB3F474B588C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
