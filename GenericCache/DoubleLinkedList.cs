@@ -37,7 +37,8 @@ namespace Cache
             {
                 var temp = First;
                 First = First.Next;
-                First.Previous = null;
+                if (First != null)
+                    First.Previous = null;
                 temp.Callback?.Invoke();                
                 string keyReturned = temp.Value;
                 temp = null;

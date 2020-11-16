@@ -29,5 +29,15 @@ namespace CacheTests
             Assert.Equal("C", doubleLinkedList.GetMostUsed());
 
         }
+
+        [Fact]
+        public void Node_Can_Be_Removed_After_Insertion()
+        {
+            DoubleLinkedList doubleLinkedList = new DoubleLinkedList();
+            doubleLinkedList.Insert("A");
+            doubleLinkedList.Insert(doubleLinkedList.Remove("A"));
+            Assert.Equal("A", doubleLinkedList.GetMostUsed());
+
+        }
     }
 }

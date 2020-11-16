@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 namespace CacheAPI.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/cache")]
     public class CacheController : ControllerBase
     {
 
@@ -23,10 +23,17 @@ namespace CacheAPI.Controllers
             _cache = cache;
         }
 
-        [HttpGet("{key}")]
-        public object Get(string key)
+        [HttpGet]
+        public string Get([FromQuery] string key)
         {
-            return _cache.Get(key);
-        }   
+            return (string)_cache.Get(key);
+        }
+
+        [HttpPost]
+        public void Put([FromQuery] string key, [FromQuery] string value)
+        {
+            if (!string.IsNullOrEmpty(key) && !string.IsNullOrEmpty(value))
+                _cache.Add(key, value);
+        }
     }
 }
